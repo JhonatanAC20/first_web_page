@@ -1,7 +1,11 @@
 $(document).ready(function () {
-    console.log("Comenzar a programar");
 
-    $('.go-link').click(function(e){
+    var logo = document.getElementsByClassName('navbar-brand')[0].getElementsByTagName('img')[0];
+
+    logo.draggable = false;
+
+    
+    $('.link-principal').click(function(e){
         e.preventDefault();
         goLink('principal');
     })

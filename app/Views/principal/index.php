@@ -41,7 +41,6 @@
                 <div class="col-md-4 grid-item">
                     <img src="resources/img/comercializacion.png" alt="Producto 2">
                     <h5>Comercialización y Servicio</h5>
-                    <button class="btn btn-primary go-link">Go</button>
                     <p>Nos especializamos en la comercialización de equipos industriales de última técnologia, ofreciendo soluciones para empresas de diversos sectores.</p>
                 </div>
                 <div class="col-md-4 grid-item">

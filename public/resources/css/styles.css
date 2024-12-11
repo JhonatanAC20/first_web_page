@@ -1,3 +1,12 @@
+@import url(../fonts/Poppins/Poppins.css);
+@import url(../fonts/Lato/Lato.css);
+@import url(../fonts/Montserrat/Montserrat.css);
+@import url(../fonts/Ubuntu/Ubuntu.css);
+@import url(../fonts/Open_Sans/open_sans.css);
+@import url(../fonts/Noto_Sans_JP/Noto_Sans_JP.css);
+@import url(../fonts/Inter/Inter.css);
+
+
 body {
     background-color: #cad2df !important; 
     color: #333; 
@@ -20,10 +29,14 @@ body {
 
 /* Personalización del Navbar */
 #navbar {
-    background-color: #f7f7f7 !important; 
+    background-color: #973c3c !important;
 }
 
 /* Logo del navbar */
+.navbar-brand{
+    padding: 0px;
+}
+
 .navbar-brand img {
     max-width: 160px; /* tamaño del logo */
     height: auto;
@@ -31,19 +44,19 @@ body {
 
 /* Estilo de los enlaces del navbar */
 .navbar-nav .nav-link {
-    color: #e75045!important; 
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff !important; 
+    font-family: 'Noto_Sans_JP', sans-serif;
     font-weight: 500; 
 }
 
 /* Cambiar color de los enlaces cuando están activos */
 .navbar-nav .nav-link.active {
-    color: #455de7 !important; 
+    color: #ffc61f !important; 
 }
 
 /* Cambiar color de los enlaces al pasar el mouse por encima */
 .navbar-nav .nav-link:hover {
-    color: #455de7 !important; 
+    color: #ffc61f !important; 
 }
 
 /* Estilo de los elementos de navegación */
@@ -215,6 +228,12 @@ body {
     color: #fa6f1f;
 }
 
+/* Enlaces */
+
+.link-principal{
+    cursor: pointer;
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
     .footer .row > div {
@@ -238,3 +257,4 @@ body {
     font-size: 1.1em;
     }
 }
+
