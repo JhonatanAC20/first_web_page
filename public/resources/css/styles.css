@@ -8,22 +8,23 @@
 
 
 body {
-    background-color: white !important; 
-    color: #333; 
-    font-family: 'Montserrat', sans-serif; 
+    background-color: white !important;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilo del carrusel */
 #carouselExample {
     max-width: 1280px;
-    height: 300px; /* tamaño del carrusel */
-    margin: 0 auto; 
-  }
-  
-  .carousel-item img {
+    height: 300px;
+    /* tamaño del carrusel */
+    margin: 0 auto;
+}
+
+.carousel-item img {
     object-fit: fill;
     height: max-content;
-  }
+}
 
 /* Personalización del Navbar */
 #navbar {
@@ -31,51 +32,88 @@ body {
     padding: 7px;
 }
 
-main{
-    margin-top: 64px;
+main {
+    margin-top: 5px;
 }
 
 /* Logo del navbar */
-.navbar-brand{
+.navbar-brand {
     padding: 5px;
-}
+}   
 
 .navbar-brand img {
-    max-width: 180px; /* tamaño del logo */
+    max-width: 180px;
+    /* tamaño del logo */
     width: 180px;
     height: auto;
 }
 
-.line{
-    background: #ff0c0c;
+/*.line {
+    background: #0dcaf0;
     padding: 1.4px;
     border-radius: 25px;
     position: fixed;
     width: 192px;
     margin-top: 11px;
+}*/
+
+.line-select-principal {
+    background: #ff0c0c;
+    padding: 1.4px;
+    border-radius: 25px;
+    position: fixed;
+    width: 80px;
+    margin-top: 11px;
+    display: none;
+}
+
+.line-select-nosotros {
+    background: #ff0c0c;
+    padding: 1.4px;
+    border-radius: 25px;
+    position: fixed;
+    width: 108px;
+    margin-top: 11px;
+    display: none;
+}
+
+.line-select-servicios {
+    background: #ff0c0c;
+    padding: 1.4px;
+    border-radius: 25px;
+    position: fixed;
+    width: 110px;
+    margin-top: 11px;
+    display: none;
+}
+
+.line-select-contactos {
+    background: #ff0c0c;
+    padding: 1.4px;
+    border-radius: 25px;
+    position: fixed;
+    width: 135px;
+    margin-top: 11px;
+    display: none;
 }
 
 /* Estilo de los enlaces del navbar */
 .navbar-nav .nav-link {
-    color: rgb(33, 164, 211) !important; 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500; 
+    color: #2c72df !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 16px;
-}
-
-/* Cambiar color de los enlaces cuando están activos */
-.navbar-nav .nav-link.active {
-    color: #ec2f39ff !important; 
 }
 
 /* Cambiar color de los enlaces al pasar el mouse por encima */
 .navbar-nav .nav-link:hover {
-    color: #ec2f39ff !important; 
+    color: rgb(199, 4, 14) !important;
 }
 
 /* Estilo de los elementos de navegación */
 .nav-item {
-    margin-right: 20px; /* Espaciado entre los elementos del navbar */
+    margin-right: 20px;
+    /* Espaciado entre los elementos del navbar */
 }
 
 /* Espaciado en la parte superior para que no se superponga con el navbar */
@@ -84,90 +122,106 @@ main{
 }
 
 /* Estilos de botones */
-    .btn-primary {
-        background-color: #d14431;;
-        color: #333;
-        border-radius: 30px;
-        padding: 12px 30px;
-        font-weight: 600;
-    }
+.btn-primary {
+    background-color: #d14431;
+    color: #333;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+}
 
-    .btn-primary:hover {
-        background-color: #d14431;;
-    }
+.btn-primary:hover {
+    background-color: #d14431;
+    ;
+}
 
 /* Sección de contenido principal */
-   /* .content-section {
-        padding: 60px 0;
-    }
-*/
-    /* Diseño de grid carrusel*/
-  /*  .grid-item {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-*/
- /*   .grid-item img {
-        max-width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 15px;
-    }
-*/
+.content-section {
+    padding: 60px 0;
+}
+
+/* Diseño de grid carrusel*/
+
+.grid-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
+
+
+.grid-carrusel .card-body{
+    height: 200px;
+}
 
 /* diseño de las secciones de la pagina nosotros */
-    .contenido {
-        background-color: #f7f7f7; /* Fondo gris claro */
-   
-        padding: 20px;
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    }
+.contenido {
+    background-color: #f7f7f7;
+    /* Fondo gris claro */
 
-    /*seccion servicios*/
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-    .container section {
-        flex: 1 1 calc(33.333% - 20px);
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-    }
-    section h2 {
-        color: #004080;
-        margin-bottom: 15px;
-    }
-    section img {
-        max-width: 80%;
-        height: auto;
-        margin-top: 15px;
-        border-radius: 8px;
-    }
-    section ul {
-        list-style-type: square;
-        margin-left: 20px;
-        text-align: left;
-        color: #333;
-    }
+    padding: 20px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/*seccion servicios*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container section {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+section img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+section ul {
+    list-style-type: square;
+    margin-left: 20px;
+    text-align: left;
+    color: #333;
+}
 
 /* Footer */
 .footer {
-    background-color: #2a3c70 !important;  /* Fondo oscuro */
-    color: #fff;  /* Texto blanco */
+    background-color: #2a3c70 !important;
+    /* Fondo oscuro */
+    color: #fff;
+    /* Texto blanco */
     padding: 40px 0;
     font-family: Arial, sans-serif;
 }
 
 .footer .footer-logo-img {
-    max-width: 150px;  /* Tamaño del logo */
+    max-width: 150px;
+    /* Tamaño del logo */
     height: auto;
 }
 
@@ -184,12 +238,14 @@ main{
     text-transform: uppercase;
 }
 
-.footer .footer-links, .footer .footer-contact, .footer .footer-social {
+.footer .footer-links,
+.footer .footer-contact,
+.footer .footer-social {
     list-style-type: none;
     padding: 0;
 }
 
-.footer .footer-links li, 
+.footer .footer-links li,
 .footer .footer-contact li,
 .footer .footer-social li {
     margin-bottom: 8px;
@@ -245,15 +301,16 @@ main{
 
 /* Enlaces */
 
-.link-principal{
+.link-principal {
     cursor: pointer;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .footer .row > div {
+    .footer .row>div {
         margin-bottom: 30px;
     }
+
     .container {
         margin-top: 30px;
     }
@@ -261,7 +318,7 @@ main{
     .img-fluid {
         max-width: 100%;
         margin-bottom: 20px;
-        }
+    }
 
     .section-title {
         font-size: 1.4em;
@@ -269,7 +326,6 @@ main{
     }
 
     .values-list li {
-    font-size: 1.1em;
+        font-size: 1.1em;
     }
 }
-

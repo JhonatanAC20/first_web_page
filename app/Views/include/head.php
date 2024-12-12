@@ -30,16 +30,20 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active link-principal" aria-current="page"><i class='bx bxs-home'></i> Inicio</a>
+                                <a class="nav-link link-principal"><i class='bx bxs-home'></i> Inicio</a>
+                                <div class="line-select-principal"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pagina/nosotros.php"><i class='bx bxs-group'></i> Nosotros</a>
+                                <a class="nav-link link-nosotros" href="../pagina/nosotros.php"><i class='bx bxs-group'></i> Nosotros</a>
+                                <div class="line-select-nosotros"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pagina/servicios.php"><i class='bx bxs-wrench'></i> Servicios</a>
+                                <a class="nav-link link-servicios" href="../pagina/servicios.php"><i class='bx bxs-wrench'></i> Servicios</a>
+                                <div class="line-select-servicios"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pagina/inicio.php"><i class='bx bxs-phone-call'></i> Contactos</a>
+                                <a class="nav-link link-contactos" href="../pagina/inicio.php"><i class='bx bxs-phone-call'></i> Contactos</a>
+                                <div class="line-select-contactos"></div>
                             </li>
                         </ul>
                     </div>
