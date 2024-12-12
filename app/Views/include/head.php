@@ -15,7 +15,8 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid"> <!--logo-->
             <a class="navbar-brand" href="../pagina/inicio.php">
-                <img src="resources/img/new_logo.png" alt="Logo de la Empresa" width="160"> <!-- Ajusta el tamaño del logo según sea necesario -->
+                <img src="resources/img/SEPII.png" alt="Logo de la Empresa" width="160"> <!-- Ajusta el tamaño del logo según sea necesario -->
+                <div class="line"></div>
             </a>
 
             <!-- Botón de menú-->

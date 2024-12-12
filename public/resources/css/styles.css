@@ -8,7 +8,7 @@
 
 
 body {
-    background-color: #cad2df !important; 
+    background-color: white !important; 
     color: #333; 
     font-family: 'Montserrat', sans-serif; 
 }
@@ -29,34 +29,45 @@ body {
 
 /* Personalización del Navbar */
 #navbar {
-    background-color: #973c3c !important;
+    background-color: white !important;
 }
 
 /* Logo del navbar */
 .navbar-brand{
-    padding: 0px;
+    padding: 5px;
 }
 
 .navbar-brand img {
-    max-width: 160px; /* tamaño del logo */
+    max-width: 180px; /* tamaño del logo */
+    width: 180px;
     height: auto;
+}
+
+.line{
+    background: #f1634a;
+    padding: 1.4px;
+    border-radius: 25px;
+    position: fixed;
+    width: 192px;
+    margin-top: 10px;
 }
 
 /* Estilo de los enlaces del navbar */
 .navbar-nav .nav-link {
-    color: #ffffff !important; 
-    font-family: 'Noto_Sans_JP', sans-serif;
+    color: rgb(33, 164, 211) !important; 
+    font-family: 'Poppins', sans-serif;
     font-weight: 500; 
+    font-size: 16px;
 }
 
 /* Cambiar color de los enlaces cuando están activos */
 .navbar-nav .nav-link.active {
-    color: #ffc61f !important; 
+    color: #ec2f39ff !important; 
 }
 
 /* Cambiar color de los enlaces al pasar el mouse por encima */
 .navbar-nav .nav-link:hover {
-    color: #ffc61f !important; 
+    color: #ec2f39ff !important; 
 }
 
 /* Estilo de los elementos de navegación */
