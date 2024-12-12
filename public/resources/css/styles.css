@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    margin-top: 5px;
+    margin-top: 64px;
 }
 
 /* Logo del navbar */
@@ -107,7 +107,11 @@ main {
 
 /* Cambiar color de los enlaces al pasar el mouse por encima */
 .navbar-nav .nav-link:hover {
-    color: rgb(199, 4, 14) !important;
+    color: #ff0c0c !important;
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background-image: url('../icons/menu.png');
 }
 
 /* Estilo de los elementos de navegación */
@@ -137,7 +141,7 @@ main {
 
 /* Sección de contenido principal */
 .content-section {
-    padding: 60px 0;
+    padding: 0px 0;
 }
 
 /* Diseño de grid carrusel*/
@@ -306,6 +310,16 @@ section ul {
 }
 
 /* Responsividad */
+@media only screen and (max-width: 991px){
+    .line-select-principal{
+        display: none !important;
+    }
+
+    #navbar{
+        background-color: white !important;
+    }
+}
+
 @media (max-width: 768px) {
     .footer .row>div {
         margin-bottom: 30px;

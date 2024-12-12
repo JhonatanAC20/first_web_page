@@ -4,6 +4,11 @@ $(document).ready(function () {
     logo.draggable = false;
 
     if($('.vw-principal').length){
+
+        const $link_principal = $('.link-principal');
+        
+        $link_principal[0].style.setProperty('color', '#ff0c0c', 'important');
+        
         $('.line-select-principal').css({'display':'block'});
     }
 
