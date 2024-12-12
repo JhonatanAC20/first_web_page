@@ -9,7 +9,8 @@
             <div class="col-md-6">
                 <h1 class="titulo">¿Quiénes Somos?</h1>
                 <p class="parrafo">
-                    Somos una empresa especializada en la elaboración de planos y proyectos, mecanizados y fabricaciones, mantenimiento, montaje y desmontaje, tableros electricos y electronicos (PLC), solución integra en climatización (aire acondicionado, refrigeración, chillers).
+                    Somos una empresa especializada en la elaboración de planos y proyectos, mecanizados y fabricaciones, mantenimiento, montaje y desmontaje, tableros 
+                    eléctricos y electrónicos (PLC), solución integra en climatización (aire acondicionado, refrigeración, chillers).
                 </p>
             </div>
             <div class="col-md-6 text-center">
@@ -30,7 +31,8 @@
             <div class="col">
                 <h1 class="titulo">Visión</h1>
                 <p class="parrafo">
-                    Posicionar el nombre de nuestra empresa entre las empresas TOP de mantenimiento a nivel nacional e internacional, garantizando la puntualidad y calidad de cada producto realizado.
+                    Posicionar el nombre de nuestra empresa entre las empresas TOP de mantenimiento a nivel nacional e internacional, garantizando la puntualidad 
+                    y calidad de cada producto realizado.
                 </p>
             </div>
         </div>
@@ -39,7 +41,9 @@
             <div class="col">
                 <h1 class="titulo">Objetivos</h1>
                 <p class="parrafo">
-                    En SEPI S.A.C. queremos consolidarnos como líderes en el ámbito de mantenimiento industrial, climatización y diseño de proyectos. Nos destacamos por la calidad y eficiencia en los servicios que ofrecemos, ampliando nuestra presencia nacional e internacional con alianzas estratégicas y nuevos contratos.
+                    En SEPI S.A.C. queremos consolidarnos como líderes en el ámbito de mantenimiento industrial, climatización y diseño de proyectos.
+                    Nos destacamos por la calidad y eficiencia en los servicios que ofrecemos, ampliando nuestra presencia nacional e internacional con 
+                    alianzas estratégicas y nuevos contratos.
                 </p>
             </div>
         </div>
