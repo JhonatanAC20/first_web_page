@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="footer-bottom">
-                        <p>COPYRIGHT &copy; SEPI S.A.C. 2024. Todos los derechos reservados</p>
+                        <p>COPYRIGHT &copy; SEPI S.A.C. <?= date('Y') ?>. Todos los derechos reservados</p>
                     </div>
                 </div>
             </div>

@@ -32,6 +32,14 @@ $(document).ready(function () {
         $('.line-select-servicios').css({'display':'block'});
     }
 
+    if($('.vw-contactos').length){
+        const $link_contactos = $('.link-contactos');
+
+        $link_contactos[0].style.setProperty('color', '#ff0c0c', 'important');
+
+        $('.line-select-contactos').css({'display':'block'});
+    }
+
     $('.link-principal').click(function(e){
         e.preventDefault();
         goLink('principal');
@@ -45,6 +53,11 @@ $(document).ready(function () {
     $('.link-servicios').click(function(e){
         e.preventDefault();
         goLink('servicios');
+    })
+
+    $('.link-contactos').click(function(e){
+        e.preventDefault();
+        goLink('contactos');
     })
 
     function goLink(view) {
