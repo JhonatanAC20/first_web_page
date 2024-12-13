@@ -2,8 +2,7 @@
 
 <?= $this->section('contenido'); ?>
 
-<body>
-    <main>
+    <main class="vw-nosotros">
         <!-- contenido  -->
         <div class="row align-items-center contenido">
             <div class="col-md-6">

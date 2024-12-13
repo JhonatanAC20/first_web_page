@@ -13,6 +13,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/menu/carga.gif') 50% 50% no-repeat rgb(20 20 20);
+    opacity: .8;
+}
+
 /* Estilo del carrusel */
 #carouselExample {
     max-width: 1280px;
