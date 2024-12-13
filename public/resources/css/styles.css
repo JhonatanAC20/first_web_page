@@ -28,7 +28,8 @@ body {
 
 /* Personalización del Navbar */
 #navbar {
-    background-color: #ffffff91 !important;
+    /*background-color: #ffffff91 !important;*/
+    background-color: #fff !important;
     padding: 7px;
 }
 
@@ -39,7 +40,7 @@ main {
 /* Logo del navbar */
 .navbar-brand {
     padding: 5px;
-}   
+}
 
 .navbar-brand img {
     max-width: 180px;
@@ -48,22 +49,13 @@ main {
     height: auto;
 }
 
-/*.line {
-    background: #0dcaf0;
-    padding: 1.4px;
-    border-radius: 25px;
-    position: fixed;
-    width: 192px;
-    margin-top: 11px;
-}*/
-
 .line-select-principal {
     background: #ff0c0c;
     padding: 1.4px;
     border-radius: 25px;
     position: fixed;
     width: 80px;
-    margin-top: 11px;
+    margin-top: 10px;
     display: none;
 }
 
@@ -73,7 +65,7 @@ main {
     border-radius: 25px;
     position: fixed;
     width: 108px;
-    margin-top: 11px;
+    margin-top: 10px;
     display: none;
 }
 
@@ -83,7 +75,7 @@ main {
     border-radius: 25px;
     position: fixed;
     width: 110px;
-    margin-top: 11px;
+    margin-top: 10px;
     display: none;
 }
 
@@ -93,7 +85,7 @@ main {
     border-radius: 25px;
     position: fixed;
     width: 135px;
-    margin-top: 11px;
+    margin-top: 10px;
     display: none;
 }
 
@@ -110,9 +102,9 @@ main {
     color: #ff0c0c !important;
 }
 
-.navbar-dark .navbar-toggler-icon{
-    background-image: url('../icons/menu.png');
-}   
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('../icons/menu.png') !important;
+}
 
 /* Estilo de los elementos de navegación */
 .nav-item {
@@ -160,9 +152,21 @@ main {
 }
 
 
-.grid-carrusel .card-body{
+.grid-carrusel .card-body {
     height: 200px;
 }
+
+.grid-carrusel .card {
+    transition: all 300ms ease-in-out;
+}
+
+.grid-carrusel .card:hover {
+    box-shadow: 0px 10px 40px #9e9e9e;
+    transform: scale(1.02);
+    animation: slide;
+}
+
+
 
 /* diseño de las secciones de la pagina nosotros */
 .contenido {
@@ -305,17 +309,17 @@ section ul {
 
 /* Enlaces */
 
-.link-principal {
+.links .nav-item a {
     cursor: pointer;
 }
 
 /* Responsividad */
-@media only screen and (max-width: 991px){
-    .line-select-principal{
+@media only screen and (max-width: 991px) {
+    .line-select-principal {
         display: none !important;
     }
 
-    #navbar{
+    #navbar {
         background-color: white !important;
     }
 }

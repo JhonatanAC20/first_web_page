@@ -15,7 +15,7 @@
     <div class="content-section">
         <div class="container-fluid">
             <header>
-                <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
                     <a class="navbar-brand" href="../pagina/inicio.php">
                         <img src="resources/img/SEPII.png" alt="Logo de la Empresa" width="160"> <!-- Ajusta el tamaño del logo según sea necesario -->
                         <div class="line"></div>
@@ -28,21 +28,21 @@
 
                     <!-- Elementos del menú -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav ms-auto links">
                             <li class="nav-item">
                                 <a class="nav-link link-principal"><i class='bx bxs-home'></i> Inicio</a>
                                 <div class="line-select-principal"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link-nosotros" href="../pagina/nosotros.php"><i class='bx bxs-group'></i> Nosotros</a>
+                                <a class="nav-link link-nosotros"><i class='bx bxs-group'></i> Nosotros</a>
                                 <div class="line-select-nosotros"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link-servicios" href="../pagina/servicios.php"><i class='bx bxs-wrench'></i> Servicios</a>
+                                <a class="nav-link link-servicios"><i class='bx bxs-wrench'></i> Servicios</a>
                                 <div class="line-select-servicios"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link-contactos" href="../pagina/inicio.php"><i class='bx bxs-phone-call'></i> Contactos</a>
+                                <a class="nav-link link-contactos"><i class='bx bxs-phone-call'></i> Contactos</a>
                                 <div class="line-select-contactos"></div>
                             </li>
                         </ul>
