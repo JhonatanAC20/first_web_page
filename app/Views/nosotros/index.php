@@ -2,66 +2,79 @@
 
 <?= $this->section('contenido'); ?>
 
-    <main class="vw-nosotros">
-        <!-- contenido  -->
-        <div class="row align-items-center contenido">
-            <div class="col-md-6">
-                <h1 class="titulo">¿Quiénes Somos?</h1>
-                <p class="parrafo">
-                    Somos una empresa especializada en la elaboración de planos y proyectos, mecanizados y fabricaciones, mantenimiento, montaje y desmontaje, tableros 
-                    eléctricos y electrónicos (PLC), solución integra en climatización (aire acondicionado, refrigeración, chillers).
-                </p>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="resources/img/SEPI.png" alt="Logo SEPI" class="img-fluid" style="max-height: 200px;">
+<main class="vw-nosotros">
+ 
+<section class="hero d-flex align-items-center py-3">
+        <div class="container d-flex align-items-center">
+            <img src="resources/img/nosotros.png" alt="Imagen Nosotros" class="img-fluid me-3" style="max-width: 150px; height: auto;">
+            <div>
+                <h1 class="display-4 fw-bold" style="color: #d8d8d8;">Nosotros</h1>
+                <p class="lead" style="color: black;">Conoce nuestra misión, visión, valores y objetivos.</p>
             </div>
         </div>
+    </section>
 
-        <div class="row contenido">
-            <div class="col">
-                <h1 class="titulo">Misión</h1>
-                <p class="parrafo">
-                    Ser líderes en todos nuestros rubros de trabajo, satisfaciendo la necesidad de nuestros clientes con los estándares requeridos en la actualidad.
-                </p>
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="titulo">¿Quiénes Somos?</h2>
+                    <p class="parrafo">
+                        Somos una empresa especializada en la elaboración de planos y proyectos, mecanizados y fabricaciones, mantenimiento, montaje y desmontaje, tableros eléctricos y electrónicos (PLC), solución integral en climatización (aire acondicionado, refrigeración, chillers).
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="resources/img/SEPI.png" alt="Logo SEPI" class="img-fluid rounded shadow" style="max-height: 200px;">
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="row contenido">
-            <div class="col">
-                <h1 class="titulo">Visión</h1>
-                <p class="parrafo">
-                    Posicionar el nombre de nuestra empresa entre las empresas TOP de mantenimiento a nivel nacional e internacional, garantizando la puntualidad 
-                    y calidad de cada producto realizado.
-                </p>
-            </div>
-        </div>
 
-        <div class="row contenido">
-            <div class="col">
-                <h1 class="titulo">Objetivos</h1>
-                <p class="parrafo">
-                    En SEPI S.A.C. queremos consolidarnos como líderes en el ámbito de mantenimiento industrial, climatización y diseño de proyectos.
-                    Nos destacamos por la calidad y eficiencia en los servicios que ofrecemos, ampliando nuestra presencia nacional e internacional con 
-                    alianzas estratégicas y nuevos contratos.
-                </p>
+    <section class="objectives-values bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="titulo">Objetivos</h2>
+                    <p class="parrafo">
+                        En SEPI S.A.C. queremos consolidarnos como líderes en el ámbito de mantenimiento industrial, climatización y diseño de proyectos.
+                        Nos destacamos por la calidad y eficiencia en los servicios que ofrecemos, ampliando nuestra presencia nacional e internacional con alianzas estratégicas y nuevos contratos.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="titulo">Valores</h2>
+                    <ul class="parrafo">
+                        <li>Responsabilidad</li>
+                        <li>Compromiso</li>
+                        <li>Constancia</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Respeto</li>
+                        <li>Honestidad</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="row contenido">
-            <div class="col">
-                <h1 class="titulo">Valores</h1>
-                <ul class="parrafo">
-                    <li>Responsabilidad</li>
-                    <li>Compromiso</li>
-                    <li>Constancia</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Respeto</li>
-                    <li>Honestidad</li>
-                </ul>
+   
+    <section class="mission-vision py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="titulo">Misión</h2>
+                    <p class="parrafo">
+                        Ser líderes en todos nuestros rubros de trabajo, satisfaciendo la necesidad de nuestros clientes con los estándares requeridos en la actualidad.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="titulo">Visión</h2>
+                    <p class="parrafo">
+                        Posicionar el nombre de nuestra empresa entre las empresas TOP de mantenimiento a nivel nacional e internacional, garantizando la puntualidad y calidad de cada producto realizado.
+                    </p>
+                </div>
             </div>
         </div>
-    </main>
-    </div>
-    </div>
+    </section>
+</main>
 
     <?= $this->endSection(); ?>

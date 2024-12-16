@@ -14,13 +14,13 @@
                 <li>Torneado, fresado, cepillado y prensado</li>
                 <li>CNC con 4 ejes</li>
             </ul>
-            <img src="images/maestranza.png" alt="Icono Maestranza">
+            <img src="resources/img/maestranza.png" class="imagen-uniforme">
         </section>
 
         <section id="climatizacion">
             <h2>Soluciones Integrales en Climatización</h2>
             <p>Comercialización, instalación y mantenimiento de aire acondicionado.</p>
-            <img src="images/climatizacion.png" alt="Icono Climatización">
+            <img src="resources/img/aire.png" alt="Icono Climatización" class="imagen-uniforme">
         </section>
 
         <section id="mantenimiento-maquinas">
@@ -32,7 +32,7 @@
                 <li>Envasados</li>
                 <li>Trituradoras</li>
             </ul>
-            <img src="images/mantenimiento.png" alt="Icono Mantenimiento">
+            <img src="resources/img/mantenimiento-maquinas.png" alt="Icono Mantenimiento" class="imagen-uniforme">
         </section>
 
         <section id="diseno-proyectos">
@@ -43,19 +43,19 @@
                 <li>Procedimientos basados en arquitectura, ubicación y necesidades del inmueble.</li>
                 <li>Evaluación geográfica, climática y energética.</li>
             </ul>
-            <img src="images/proyectos.png" alt="Icono Proyectos">
+            <img src="resources/img/diseño.png" alt="Icono Proyectos" class="imagen-uniforme">
         </section>
 
         <section id="instalaciones">
             <h2>Instalaciones</h2>
             <p>Sistemas integrales de aire acondicionado (residenciales, comerciales e industriales). Seguimos altos estándares de calidad con un staff capacitado y experimentado.</p>
-            <img src="images/instalaciones.png" alt="Icono Instalaciones">
+            <img src="resources/img/diseñado.png" alt="Icono Instalaciones" class="imagen-uniforme">
         </section>
 
         <section id="mantenimiento">
             <h2>Mantenimiento</h2>
             <p>Planes preventivos y procesos correctivos de aire acondicionado. Soporte técnico y garantía de eficiencia.</p>
-            <img src="images/soporte.png" alt="Icono Soporte">
+            <img src="resources/img/mantenimiento.png" class="imagen-uniforme">
         </section>
     </div>
 </main>
