@@ -3,6 +3,12 @@ window.onload = function () {
 };
 
 $(document).ready(function () {
+    
+    const enlaces = ['.link-principal', '.link-nosotros', '.link-servicios', '.link-contactos'];
+    const vistas = ['principal', 'nosotros', 'servicios', 'contactos'];
+
+    setEnlaces();
+    
     var logo = document.getElementsByClassName('navbar-brand')[0].getElementsByTagName('img')[0];
     logo.draggable = false;
 
@@ -40,26 +46,6 @@ $(document).ready(function () {
         $('.line-select-contactos').css({ 'display': 'block' });
     }
 
-    $('.link-principal').click(function (e) {
-        e.preventDefault();
-        goLink('principal');
-    })
-
-    $('.link-nosotros').click(function (e) {
-        e.preventDefault();
-        goLink('nosotros');
-    })
-
-    $('.link-servicios').click(function (e) {
-        e.preventDefault();
-        goLink('servicios');
-    })
-
-    $('.link-contactos').click(function (e) {
-        e.preventDefault();
-        goLink('contactos');
-    })
-
     function goLink(view) {
         const dominio = $(location).attr('hostname');
         const puerto = $(location).attr('port');
@@ -67,5 +53,14 @@ $(document).ready(function () {
         var url = `http://${dominio}:${puerto}/first_web_page/public/${view}`;
 
         $(location).attr('href', url);
+    }
+
+    function setEnlaces(){
+        for (let i = 0; i < vistas.length; i++) {
+            $(enlaces[i]).click(function(e){
+                e.preventDefault();
+                goLink(vistas[i]);
+            })
+        }
     }
 })
