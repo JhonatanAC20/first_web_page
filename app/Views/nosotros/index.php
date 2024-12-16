@@ -9,7 +9,7 @@
             <img src="resources/img/nosotros.png" alt="Imagen Nosotros" class="img-fluid me-3" style="max-width: 150px; height: auto;">
             <div>
                 <h1 class="display-4 fw-bold" style="color: #d8d8d8;">Nosotros</h1>
-                <p class="lead" style="color: black;">Conoce nuestra misión, visión, valores y objetivos.</p>
+                <p class="lead" style="color: #e4e4e4;">Conoce nuestra misión, visión, valores y objetivos.</p>
             </div>
         </div>
     </section>

@@ -7,7 +7,12 @@ $(document).ready(function () {
     const enlaces = ['.link-principal', '.link-nosotros', '.link-servicios', '.link-contactos'];
     const vistas = ['principal', 'nosotros', 'servicios', 'contactos'];
 
-    setEnlaces();
+    for (let i = 0; i < vistas.length; i++) {
+        $(enlaces[i]).click(function(e){
+            e.preventDefault();
+            goLink(vistas[i]);
+        })
+    }
     
     var logo = document.getElementsByClassName('navbar-brand')[0].getElementsByTagName('img')[0];
     logo.draggable = false;
@@ -53,14 +58,5 @@ $(document).ready(function () {
         var url = `http://${dominio}:${puerto}/first_web_page/public/${view}`;
 
         $(location).attr('href', url);
-    }
-
-    function setEnlaces(){
-        for (let i = 0; i < vistas.length; i++) {
-            $(enlaces[i]).click(function(e){
-                e.preventDefault();
-                goLink(vistas[i]);
-            })
-        }
     }
 })
