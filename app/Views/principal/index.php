@@ -5,7 +5,7 @@
 <main class="vw-principal">
     <div class="row">
         <div class="col-12">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide  animate__animated animate__fadeInDown" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
                         <img src="resources/img/carrusel_principal/SEPI_2019.png" class="d-block w-100" alt="...">

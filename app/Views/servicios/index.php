@@ -4,7 +4,7 @@
 
 <main class="vw-servicios">
     <div class="container">
-        <section id="maestranza">
+        <section id="maestranza" class="animate__animated animate__fadeInDown">
             <h2>Maestranza</h2>
             <ul>
                 <li>Diseños y proyectos</li>
@@ -17,13 +17,13 @@
             <img src="resources/img/maestranza.png" class="imagen-uniforme">
         </section>
 
-        <section id="climatizacion">
+        <section id="climatizacion" class="animate__animated">
             <h2>Soluciones Integrales en Climatización</h2>
             <p>Comercialización, instalación y mantenimiento de aire acondicionado.</p>
             <img src="resources/img/aire.png" alt="Icono Climatización" class="imagen-uniforme">
         </section>
 
-        <section id="mantenimiento-maquinas">
+        <section id="mantenimiento-maquinas" class="animate__animated">
             <h2>Mantenimiento de Máquinas</h2>
             <ul>
                 <li>Equipos de alimentación</li>
@@ -35,7 +35,7 @@
             <img src="resources/img/mantenimiento-maquinas.png" alt="Icono Mantenimiento" class="imagen-uniforme">
         </section>
 
-        <section id="diseno-proyectos">
+        <section id="diseno-proyectos" class="animate__animated">
             <h2>Diseño de Proyectos</h2>
             <ul>
                 <li>Sistemas personalizados para cada industria.</li>
@@ -46,13 +46,13 @@
             <img src="resources/img/diseño.png" alt="Icono Proyectos" class="imagen-uniforme">
         </section>
 
-        <section id="instalaciones">
+        <section id="instalaciones" class="animate__animated">
             <h2>Instalaciones</h2>
             <p>Sistemas integrales de aire acondicionado (residenciales, comerciales e industriales). Seguimos altos estándares de calidad con un staff capacitado y experimentado.</p>
             <img src="resources/img/diseñado.png" alt="Icono Instalaciones" class="imagen-uniforme">
         </section>
 
-        <section id="mantenimiento">
+        <section id="mantenimiento" class="animate__animated">
             <h2>Mantenimiento</h2>
             <p>Planes preventivos y procesos correctivos de aire acondicionado. Soporte técnico y garantía de eficiencia.</p>
             <img src="resources/img/mantenimiento.png" class="imagen-uniforme">

@@ -266,6 +266,25 @@ section ul {
     text-align: left;
     color: #333;
 }
+#climatizacion{
+    display: none;
+}
+
+#mantenimiento-maquinas{
+    display: none;
+}
+
+#diseno-proyectos{
+    display: none;
+}
+
+#instalaciones{
+    display: none;
+}
+
+#mantenimiento{
+    display: none;
+}
 
 /* Footer */
 .footer {
