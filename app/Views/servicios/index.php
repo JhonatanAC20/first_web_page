@@ -3,6 +3,15 @@
 <?= $this->section('contenido'); ?>
 
 <main class="vw-servicios">
+    <section class="hero d-flex align-items-center py-3">
+        <div class="container d-flex align-items-center">
+            <img src="resources/img/gifs/gear.gif" alt="Imagen Nosotros" class="img-fluid me-3" style="max-width: 150px; height: auto;">
+            <div>
+                <h1 class="display-4 fw-bold" style="color: #f8f8f8;">Servicios</h1>
+                <p class="lead" style="color: #e4e4e4;">Conoce todos nuestros servicios que ofrecemos.</p>
+            </div>
+        </div>
+    </section>
     <div class="container">
         <section id="maestranza" class="animate__animated animate__fadeInDown">
             <h2>Maestranza</h2>
