@@ -23,7 +23,7 @@
     <br>
     <div class="row grid-carrusel">
         <div class="col-md-12 col-lg-4 grid-item">
-            <div class="card">
+            <div class="card noSelect">
                 <img src="resources/img/climatizacion.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Climatización</h5>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="col-md-12 col-lg-4 grid-item">
-            <div class="card">
+            <div class="card noSelect">
                 <img src="resources/img/comercializacion.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Comercialización y Servicio</h5>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="col-md-12 col-lg-4 grid-item">
-            <div class="card">
+            <div class="card noSelect">
                 <img src="resources/img/fabricacion.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Fabricación de Maquinas</h5>

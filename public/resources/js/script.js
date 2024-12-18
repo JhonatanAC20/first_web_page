@@ -8,6 +8,9 @@ $(document).ready(function () {
     const vistas = ['principal', 'nosotros', 'servicios', 'contactos'];
     const lineas = ['.line-select-principal', '.line-select-nosotros', '.line-select-servicios', '.line-select-contactos'];
     const vw = ['.vw-principal', '.vw-nosotros', '.vw-servicios', '.vw-contactos'];
+   
+    var logo = document.getElementsByClassName('navbar-brand')[0].getElementsByTagName('img')[0];
+    logo.draggable = false;
 
     for (let i = 0; i < vistas.length; i++) {
         $(enlaces[i]).click(function (e) {
@@ -15,9 +18,6 @@ $(document).ready(function () {
             goLink(vistas[i]);
         })
     }
-
-    var logo = document.getElementsByClassName('navbar-brand')[0].getElementsByTagName('img')[0];
-    logo.draggable = false;
 
     for (let i = 0; i < lineas.length; i++) {
 

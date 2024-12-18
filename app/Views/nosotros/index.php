@@ -6,9 +6,9 @@
  
 <section class="hero d-flex align-items-center py-3">
         <div class="container d-flex align-items-center">
-            <img src="resources/img/nosotros.png" alt="Imagen Nosotros" class="img-fluid me-3" style="max-width: 150px; height: auto;">
+            <img src="resources/img/gifs/gear.gif" alt="Imagen Nosotros" class="img-fluid me-3" style="max-width: 150px; height: auto;">
             <div>
-                <h1 class="display-4 fw-bold" style="color: #d8d8d8;">Nosotros</h1>
+                <h1 class="display-4 fw-bold" style="color: #f8f8f8;">Nosotros</h1>
                 <p class="lead" style="color: #e4e4e4;">Conoce nuestra misión, visión, valores y objetivos.</p>
             </div>
         </div>
