@@ -88,7 +88,23 @@
 <br>
 </br>
         </div>
+<<<<<<< Updated upstream
     </div>
 </section>
+=======
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <select name="selector" id="color-selector">
+                    <option value="" selected>Seleccione un color</option>
+                    <option value="0">rojo</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</main>
+>>>>>>> Stashed changes
 
     <?= $this->endSection(); ?>
