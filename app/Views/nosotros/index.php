@@ -16,7 +16,7 @@
 
     <section class="about-us py-5">
         <div class="container">
-            <div class="row align-items-center">
+            <div id="section-info" class="row align-items-center animate__animated">
                 <div class="col-md-6">
                     <h2 class="titulo">¿Quiénes Somos?</h2>
                     <p class="parrafo">
@@ -34,7 +34,7 @@
     <div class="container">
         <div class="row">
             <!-- Objetivos -->
-            <div class="col-md-12 section-box">
+            <div id="section-objetivo" class="col-md-12 section-box animate__animated">
                 <div class="row align-items-center">
                     <div class="col-md-6 content">
                         <h2 class="titulo">Objetivos</h2>
@@ -50,7 +50,7 @@
             </div>
 
             <!-- Valores -->
-            <div class="col-md-12 section-box">
+            <div id="section-valores" class="col-md-12 section-box animate__animated">
                 <div class="row align-items-center">
                     <div class="col-md-6 content">
                         <h2 class="titulo">Valores</h2>
@@ -70,7 +70,7 @@
             </div>
 
             <!-- Misión -->
-            <div class="col-md-12 section-box">
+            <div id="section-mision" class="col-md-12 section-box animate__animated">
                 <div class="row align-items-center">
                     <div class="col-md-6 content">
                         <h2 class="titulo">Misión</h2>
@@ -79,13 +79,13 @@
                         </p>
                     </div>
                     <div class="col-md-6 text-center">
-                        <img src="resources/img/mision.jpg" alt="Imagen de misión" class="img-fluid rounded shadow">
+                        <img src="resources/img/mision.jpg" alt="Imagen de misión" id="img-mision" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
 
             <!-- Visión -->
-            <div class="col-md-12 section-box">
+            <div id="section-vision" class="col-md-12 section-box animate__animated">
                 <div class="row align-items-center">
                     <div class="col-md-6 content">
                         <h2 class="titulo">Visión</h2>

@@ -28,25 +28,62 @@ $(document).ready(function () {
 
             $(lineas[i]).css({ 'display': 'block' });
 
-            if (i == 2) {
-                $('.footer').css({ 'display': 'none' })
+            switch (i) {
+                // Vista de nosotros 
+                case 1:
+                    var secciones = [];
 
-                setTimeout(() => {
-                    $('.footer').css({ 'display': 'block' })
-                }, 200);
+                    $('.about-us .container .row').each(function () {
+                        secciones[secciones.length] = $(this).attr('id');
+                    })
 
-                var elemArr = [];
+                    $('.objectives-values .container .row .section-box').each(function () {
+                        secciones[secciones.length] = $(this).attr('id');
+                    })
 
-                $('.container section').each(function () {
-                    elemArr[elemArr.length] = $(this).attr('id');
-                })
+                    window.onload = function () {
+                        for (let i = 0; i < secciones.length; i++) {
+                            if ($(`#${secciones[i]}`).isInViewport()) {
+                                $(`#${secciones[i]}`).addClass('animate__backInUp');
+                            }
+                        }
 
-                for (let i = 0; i < elemArr.length; i++) {
+                        $(".loader").fadeOut("slow");
+
+                        $(window).on('resize scroll', function () {
+                            for (let i = 0; i < secciones.length; i++) {
+                                if ($(`#${secciones[i]}`).isInViewport()) {
+                                    $(`#${secciones[i]}`).addClass('animate__backInUp');
+                                }
+                            }
+                        });
+                    };
+
+                    break;
+
+                // Vista de servicios
+                case 2:
+                    $('.footer').css({ 'display': 'none' })
+
                     setTimeout(() => {
-                        $(`#${elemArr[i]}`).addClass('animate__fadeInDown');
-                        $(`#${elemArr[i]}`).css({ 'display': 'block' });
-                    }, 60);
-                }
+                        $('.footer').css({ 'display': 'block' })
+                    }, 200);
+
+                    var elemArr = [];
+
+                    $('.container section').each(function () {
+                        elemArr[elemArr.length] = $(this).attr('id');
+                    })
+
+                    for (let i = 0; i < elemArr.length; i++) {
+                        setTimeout(() => {
+                            $(`#${elemArr[i]}`).addClass('animate__fadeInDown');
+                            $(`#${elemArr[i]}`).css({ 'display': 'block' });
+                        }, 60);
+                    }
+                    break;
+                default:
+                    break;
             }
         }
     }
@@ -59,4 +96,14 @@ $(document).ready(function () {
 
         $(location).attr('href', url);
     }
+
+    $.fn.isInViewport = function () {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
 })
