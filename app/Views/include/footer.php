@@ -54,7 +54,7 @@
         </div>
         <script src="resources/framework/bootstrap/js/bootstrap.bundle.js"></script>
         <script src="resources/library/jQuery/jquery-3.7.1.min.js"></script>
-        <script src="resources/js/script.js" defer></script>
+        <script src="resources/js/script.js"></script>
     </footer>
 
     </body>
