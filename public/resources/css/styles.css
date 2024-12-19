@@ -222,6 +222,78 @@ ul.parrafo {
 }
 
 
+.contenedo {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/*seccion nosotros*/
+
+.section-box {
+    margin-bottom: 30px; /* Separación entre las secciones */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+.section-box:nth-child(1) {
+    background-color: #f8d7da; /* Fondo para Objetivos */
+}
+
+.section-box:nth-child(2) {
+    background-color: #d4edda; /* Fondo para Valores */
+}
+
+.section-box:nth-child(3) {
+    background-color: #cce5ff; /* Fondo para Misión */
+}
+
+.section-box:nth-child(4) {
+    background-color: #fff3cd; /* Fondo para Visión */
+}
+
+/* Títulos */
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Párrafos */
+.parrafo {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Imágenes */
+.img-fluid {
+    max-height: 220px;
+    width: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+}
+
+/* Alinear contenido en pantallas pequeñas */
+@media (max-width: 767px) {
+    .section-box .row {
+        flex-direction: column; /* Coloca contenido e imagen en columnas */
+    }
+    .content, .text-center {
+        text-align: center; /* Centra texto e imágenes */
+    }
+    .img-fluid {
+        max-height: 180px; /* Ajusta la altura en pantallas pequeñas */
+    }
+}
+
 
 /*seccion servicios*/
 .container {
