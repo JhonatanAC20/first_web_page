@@ -45,6 +45,7 @@ $(document).ready(function () {
                         for (let i = 0; i < secciones.length; i++) {
                             if ($(`#${secciones[i]}`).isInViewport()) {
                                 $(`#${secciones[i]}`).addClass('animate__backInUp');
+
                             }
                         }
 

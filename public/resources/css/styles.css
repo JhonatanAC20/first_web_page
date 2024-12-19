@@ -281,6 +281,26 @@ ul.parrafo {
     border-radius: 8px;
 }
 
+#section-info{
+    opacity: 0;
+}
+
+#section-objetivo{
+    opacity: 0;
+}
+
+#section-valores{
+    opacity: 0;
+}
+
+#section-mision{
+    opacity: 0;
+}
+
+#section-vision{
+    opacity: 0;
+}
+
 /* Alinear contenido en pantallas pequeñas */
 @media (max-width: 767px) {
     .section-box .row {
