@@ -19,7 +19,6 @@ $(document).ready(function () {
     }
 
     for (let i = 0; i < lineas.length; i++) {
-
         if ($(vw[i]).length) {
             var elemento = '';
 
@@ -41,7 +40,7 @@ $(document).ready(function () {
                 $('.container section').each(function () {
                     elemArr[elemArr.length] = $(this).attr('id');
                 })
-                
+
                 for (let i = 0; i < elemArr.length; i++) {
                     setTimeout(() => {
                         $(`#${elemArr[i]}`).addClass('animate__fadeInDown');
@@ -52,7 +51,7 @@ $(document).ready(function () {
         }
     }
 
-    function goLink(view) { 
+    function goLink(view) {
         const dominio = $(location).attr('hostname');
         const puerto = $(location).attr('port');
 

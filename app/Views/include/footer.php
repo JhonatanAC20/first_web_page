@@ -2,26 +2,17 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-
-                <!--<div class="col-md-3">
-                    <div class="footer-logo">
-                        <img src="resources/img/SEPII.png" class="footer-logo-img">
-                    </div>
-                    <p class="footer-description">
-                        Nos especializamos en la elaboración de planos y proyectos, mecanizados y fabricaciones, mantenimiento desmontaje y montaje, tableros electricos y electronicos (PLC), solución integra en climatización (aire acondicionado, refrigeració, chillers).
-                    </p>
-                </div> -->
-
                 <div class="col-md-4">
                     <h5 class="footer-heading">Contactos</h5>
                     <ul class="footer-contact">
-                        <li><strong>Teléfono:</strong> 
-                        <br><i class='bx bxs-phone'></i> (01) 533-5725</li>
-                        
+                        <li><strong>Teléfono:</strong>
+                            <br><i class='bx bxs-phone'></i> (01) 533-5725
+                        </li>
+
                         <li><strong>Contacto Directo:</strong> <br>
-                        <i class='bx bxs-phone-outgoing'></i> 998 268 417<br>
-                        <i class='bx bxs-phone-outgoing'></i> 998 268 418<br>
-                        <i class='bx bxs-phone-outgoing'></i> 960 545 627
+                            <i class='bx bxs-phone-outgoing'></i> 998 268 417<br>
+                            <i class='bx bxs-phone-outgoing'></i> 998 268 418<br>
+                            <i class='bx bxs-phone-outgoing'></i> 960 545 627
                         </li>
                     </ul>
                 </div>
@@ -65,7 +56,6 @@
         <script src="resources/library/jQuery/jquery-3.7.1.min.js"></script>
         <script src="resources/js/script.js" defer></script>
     </footer>
-
 
     </body>
 
