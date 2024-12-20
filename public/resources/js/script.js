@@ -3,30 +3,44 @@ window.onload = function () {
 };
 
 $(document).ready(function () {
-    const enlaces = ['.link-principal', '.link-nosotros', '.link-servicios', '.link-contactos'];
     const vistas = ['principal', 'nosotros', 'servicios', 'contactos'];
-    const lineas = ['.line-select-principal', '.line-select-nosotros', '.line-select-servicios', '.line-select-contactos'];
     const vw = ['.vw-principal', '.vw-nosotros', '.vw-servicios', '.vw-contactos'];
+
+    var enlacesArr = [];
+
+    $('#navbarNav ul li .nav-link').each(function () {
+        enlacesArr[enlacesArr.length] = $(this).attr('class');
+    });
+
+    for (let i = 0; i < enlacesArr.length; i++) {
+        let enlace = '';
+
+        enlace += enlacesArr[i].substring(9, enlacesArr[i].length);
+
+        $(`.${enlace}`).click(function (e) {
+            e.preventDefault();
+            goLink(vistas[i]);
+        })
+    };
 
     var logo = document.getElementsByClassName('navbar-brand')[0].getElementsByTagName('img')[0];
     logo.draggable = false;
 
-    for (let i = 0; i < vistas.length; i++) {
-        $(enlaces[i]).click(function (e) {
-            e.preventDefault();
-            goLink(vistas[i]);
-        })
-    }
+    var lineasArr = [];
 
-    for (let i = 0; i < lineas.length; i++) {
+    $('#navbarNav ul li div').each(function () {
+        lineasArr[lineasArr.length] = $(this).attr('class');
+    });
+
+    for (let i = 0; i < lineasArr.length; i++) {
         if ($(vw[i]).length) {
             var elemento = '';
 
-            elemento += enlaces[i];
+            elemento += enlacesArr[i].substring(9, enlacesArr[i].length);
 
-            $(elemento).addClass('linkActive');
+            $(`.${elemento}`).addClass('linkActive');
 
-            $(lineas[i]).css({ 'display': 'block' });
+            $(`.${lineasArr[i]}`).css({ 'display': 'block' });
 
             switch (i) {
                 // Vista de nosotros 
@@ -87,7 +101,7 @@ $(document).ready(function () {
                     break;
             }
         }
-    }
+    };
 
     function goLink(view) {
         const dominio = $(location).attr('hostname');
@@ -96,7 +110,7 @@ $(document).ready(function () {
         var url = `http://${dominio}:${puerto}/first_web_page/public/${view}`;
 
         $(location).attr('href', url);
-    }
+    };
 
     $.fn.isInViewport = function () {
         var elementTop = $(this).offset().top;
@@ -107,4 +121,33 @@ $(document).ready(function () {
 
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
+
+    var libros = {
+        tipos: ['terror', 'accion', 'fantasia'],
+        ver_tipos: function () {
+            var i = 0;
+
+            while (i < this.tipos.length) {
+                console.log(this.tipos[i]);
+                i = i + 1;
+            }
+        },
+
+        existentes: ['Harry Potter', 'El señor de los anillos', 'La milla verde', 'Winnie the pooh', 'Caillou'],
+
+        ver_existencia: function () {
+            var i = 0;
+
+            while (i < this.existentes.length) {
+                console.log(this.existentes[i]);
+                i = i + 1;
+            }
+        }
+    };
+
+    libros.tipos.shift();
+    libros.ver_tipos();
+    libros.ver_existencia();
+
+    console.log(libros);
 })
