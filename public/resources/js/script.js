@@ -42,64 +42,7 @@ $(document).ready(function () {
 
             $(`.${lineasArr[i]}`).css({ 'display': 'block' });
 
-            switch (i) {
-                // Vista de nosotros 
-                case 1:
-                    var secciones = [];
-
-                    $('.about-us .container .row').each(function () {
-                        secciones[secciones.length] = $(this).attr('id');
-                    })
-
-                    $('.objectives-values .container .row .section-box').each(function () {
-                        secciones[secciones.length] = $(this).attr('id');
-                    })
-
-                    window.onload = function () {
-                        for (let i = 0; i < secciones.length; i++) {
-                            if ($(`#${secciones[i]}`).isInViewport()) {
-                                $(`#${secciones[i]}`).addClass('animate__backInUp');
-
-                            }
-                        }
-
-                        $(".loader").fadeOut("slow");
-
-                        $(window).on('resize scroll', function () {
-                            for (let i = 0; i < secciones.length; i++) {
-                                if ($(`#${secciones[i]}`).isInViewport()) {
-                                    $(`#${secciones[i]}`).addClass('animate__backInUp');
-                                }
-                            }
-                        });
-                    };
-
-                    break;
-
-                // Vista de servicios
-                case 2:
-                    $('.footer').css({ 'display': 'none' })
-
-                    setTimeout(() => {
-                        $('.footer').css({ 'display': 'block' })
-                    }, 200);
-
-                    var elemArr = [];
-
-                    $('.container section').each(function () {
-                        elemArr[elemArr.length] = $(this).attr('id');
-                    })
-
-                    for (let i = 0; i < elemArr.length; i++) {
-                        setTimeout(() => {
-                            $(`#${elemArr[i]}`).addClass('animate__fadeInDown');
-                            $(`#${elemArr[i]}`).css({ 'display': 'block' });
-                        }, 60);
-                    }
-                    break;
-                default:
-                    break;
-            }
+            switch(i){case 1:var secciones=[];$(".about-us .container .row").each((function(){secciones[secciones.length]=$(this).attr("id")})),$(".objectives-values .container .row .section-box").each((function(){secciones[secciones.length]=$(this).attr("id")})),window.onload=function(){for(let e=0;e<secciones.length;e++)$(`#${secciones[e]}`).isInViewport()&&$(`#${secciones[e]}`).addClass("animate__backInUp");$(".loader").fadeOut("slow"),$(window).on("resize scroll",(function(){for(let e=0;e<secciones.length;e++)$(`#${secciones[e]}`).isInViewport()&&$(`#${secciones[e]}`).addClass("animate__backInUp")}))};break;case 2:$(".footer").css({display:"none"}),setTimeout((()=>{$(".footer").css({display:"block"})}),200);var elemArr=[];$(".container section").each((function(){elemArr[elemArr.length]=$(this).attr("id")}));for(let e=0;e<elemArr.length;e++)setTimeout((()=>{$(`#${elemArr[e]}`).addClass("animate__fadeInDown"),$(`#${elemArr[e]}`).css({display:"block"})}),60)}
         }
     };
 
@@ -121,33 +64,4 @@ $(document).ready(function () {
 
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
-
-    var libros = {
-        tipos: ['terror', 'accion', 'fantasia'],
-        ver_tipos: function () {
-            var i = 0;
-
-            while (i < this.tipos.length) {
-                console.log(this.tipos[i]);
-                i = i + 1;
-            }
-        },
-
-        existentes: ['Harry Potter', 'El señor de los anillos', 'La milla verde', 'Winnie the pooh', 'Caillou'],
-
-        ver_existencia: function () {
-            var i = 0;
-
-            while (i < this.existentes.length) {
-                console.log(this.existentes[i]);
-                i = i + 1;
-            }
-        }
-    };
-
-    libros.tipos.shift();
-    libros.ver_tipos();
-    libros.ver_existencia();
-
-    console.log(libros);
 })

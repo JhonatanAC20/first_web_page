@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SEPI <?= $titulo ?></title>
+    <link rel="icon" href="resources/icons/icono_web.png" type="image/x-icon">
     <link rel="stylesheet" href="resources/icons/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css" type="text/css">
     <link rel="stylesheet" href="resources/framework/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
